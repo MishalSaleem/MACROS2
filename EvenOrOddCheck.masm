@@ -1,0 +1,51 @@
+org 100h
+.model small
+.stack 100h
+.data     
+msg1 db 'Enter a single-digit number(0-9) $' 
+msg2 db 'The number is Even. $' 
+msg3 db 'The number is Odd. $'
+newline db 10, 13, '$'
+
+.code
+
+print_string macro
+    mov dx,offset msg1
+    mov ah,9
+    int 21h
+endm
+
+print_newline macro
+    mov dx,offset newline
+    mov ah,9
+    int 21h
+endm
+
+main proc
+    print_string
+    mov ah,1
+    int 21h
+    sub al,48
+    
+    AND al,1
+    CMP al,0
+    je even
+    
+    print_newline
+    
+    mov dx,offset msg3
+    mov ah,9
+    int 21h
+    
+    jmp exit
+    
+    even:
+    print_newline
+    mov dx,offset msg2
+    mov ah,9
+    int 21h
+    
+    exit:
+    ret
+    main endp
+end main

@@ -31,3 +31,38 @@ It is written using *MASM-compatible syntax*, and works on MASM, TASM, or EMU808
 ## Sample Output
 ![image](https://github.com/user-attachments/assets/078a18bc-116b-4b3c-acaf-8c9c1544a29c)
 ![image](https://github.com/user-attachments/assets/80336cf8-7b53-4dc3-8224-4978229fa54b)
+
+# ASCII Character Sorter in 8086 Assembly
+
+This 8086 Assembly program takes *three characters* from the user and prints them in *ascending order based on their ASCII values*.
+
+## Description
+
+The program:
+- Prompts the user to input 3 characters.
+- Stores the characters.
+- Sorts them using basic comparisons.
+- Displays the characters from smallest to greatest (by ASCII).
+
+## Features
+
+- Uses *macros* for cleaner and reusable code.
+- No external libraries – pure Assembly logic.
+- Simple and easy to understand.
+
+## Program Workflow
+
+1. *Prompt*:  
+   Enter three characters:
+
+2. *Input*:  
+   User enters 3 characters (e.g., c a b)
+
+3. *Sorting Logic*:
+   - Compare first and second characters
+   - Compare first and third characters
+   - Compare second and third characters
+   - Use XCHG to swap if needed
+
+4. *Output*:  
+  ![image](https://github.com/user-attachments/assets/745e8568-ffb6-4291-894b-6d84259904b7)

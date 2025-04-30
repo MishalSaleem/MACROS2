@@ -29,3 +29,5 @@ It is written using *MASM-compatible syntax*, and works on MASM, TASM, or EMU808
 ---
 
 ## Sample Output
+![image](https://github.com/user-attachments/assets/078a18bc-116b-4b3c-acaf-8c9c1544a29c)
+![image](https://github.com/user-attachments/assets/80336cf8-7b53-4dc3-8224-4978229fa54b)
